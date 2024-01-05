@@ -1,0 +1,265 @@
+::-moz-selection {
+  color: #fff;
+  background: #3498db;
+}
+
+::selection {
+  color: #fff;
+  background: #3498db;
+}
+
+.main {
+  display: flex;
+  padding: 0 10px;
+  min-height: 70vh;
+  align-items: center;
+  background: #3498db;
+  justify-content: center;
+  animation: b-color 10s infinite alternate;
+  -webkit-animation: b-color 10s infinite alternate;
+}
+@keyframes b-color {
+  25% {
+    background: #3498db;
+  }
+  50% {
+    background: #575757;
+  }
+  75% {
+    background: #3498db;
+  }
+  100% {
+    background: #575757;
+  }
+}
+@media (max-width: 430px) {
+  .main {
+    height: 255px;
+    padding: 16px 20px;
+  }
+}
+.main .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main .container .content {
+  cursor: url(../Imgs/cursor3.png), auto;
+  height: 265px;
+  max-width: 410px;
+  background: #fff;
+  border-radius: 7px;
+  padding: 20px 25px 0;
+  transition: height 0.2s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+.main .container .content.active {
+  height: 530px;
+}
+.main .container .content.active .qr-code {
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity 0.5s 0.05s ease;
+}
+@media (max-width: 430px) {
+  .main .container .content.active {
+    height: 530px;
+  }
+}
+.main .container .content header h1 {
+  font-size: 21px;
+  font-weight: 500;
+}
+.main .container .content header p {
+  margin-top: 5px;
+  color: #575757;
+  font-size: 16px;
+}
+@media (max-width: 430px) {
+  .main .container .content header p {
+    color: #696969;
+  }
+}
+.main .container .content .form {
+  margin: 20px 0 25px;
+}
+.main .container .content .form :where(input, button) {
+  width: 100%;
+  height: 55px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  transition: 0.1s ease;
+}
+@media (max-width: 430px) {
+  .main .container .content .form :where(input, button) {
+    height: 52px;
+  }
+}
+.main .container .content .form input {
+  font-size: 18px;
+  padding: 0 17px;
+  border: 1px solid #999;
+}
+.main .container .content .form input:focus {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.13);
+}
+.main .container .content .form input::-moz-placeholder {
+  color: #999;
+}
+.main .container .content .form input::placeholder {
+  color: #999;
+}
+.main .container .content .form button {
+  color: #fff;
+  cursor: url(../Imgs/up-sign.png), auto;
+  margin-top: 20px;
+  font-size: 17px;
+  background: #3498db;
+}
+.main .container .content .qr-code {
+  opacity: 0;
+  display: flex;
+  padding: 33px 0;
+  border-radius: 5px;
+  align-items: center;
+  pointer-events: none;
+  justify-content: center;
+  border: 1px solid #ccc;
+}
+.main .container .content .qr-code img {
+  width: 170px;
+}
+@media (max-width: 430px) {
+  .main .container .content .qr-code img {
+    width: 160px;
+  }
+}
+
+footer {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: url(../Imgs/forbidden.png), auto;
+}
+footer .container {
+  padding: 30px;
+}
+footer .container .contnet {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  padding: 30px;
+}
+@media (max-width: 767px) {
+  footer .container .contnet {
+    flex-direction: column;
+    padding: 0px;
+  }
+}
+footer .container .contnet .info {
+  cursor: url(../Imgs/cursor3.png), auto;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  padding: 10px;
+}
+@media (max-width: 767px) {
+  footer .container .contnet .info {
+    padding: 0px;
+  }
+}
+footer .container .contnet .info .box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+footer .container .contnet .info .box i {
+  margin-right: 15px;
+  cursor: url(../Imgs/up-sign.png), auto;
+  font-size: 25px;
+  color: #575757;
+  transition: 0.3s linear;
+  -webkit-transition: 0.3s linear;
+  -moz-transition: 0.3s linear;
+  -ms-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+}
+@media (max-width: 767px) {
+  footer .container .contnet .info .box i {
+    font-size: 20px;
+  }
+}
+footer .container .contnet .info .box i:hover {
+  color: #3498db;
+}
+footer .container .contnet .info .box a,
+footer .container .contnet .info .box p {
+  cursor: url(../Imgs/up-sign.png), auto;
+  font-weight: 600;
+  font-size: 18px;
+  color: #575757;
+  transition: 0.3s linear;
+  -webkit-transition: 0.3s linear;
+  -moz-transition: 0.3s linear;
+  -ms-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+}
+footer .container .contnet .info .box a:hover,
+footer .container .contnet .info .box p:hover {
+  color: #3498db;
+}
+@media (max-width: 767px) {
+  footer .container .contnet .info .box {
+    margin-bottom: 20px;
+  }
+}
+footer .container .contnet .about-me {
+  cursor: url(../Imgs/cursor3.png), auto;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  padding: 10px;
+}
+@media (max-width: 767px) {
+  footer .container .contnet .about-me {
+    padding: 0px;
+  }
+}
+footer .container .contnet .about-me .box:first-child h3 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #3498db;
+  margin: 0;
+}
+footer .container .contnet .about-me .box:first-child p {
+  max-width: 250px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.7;
+}
+@media (max-width: 767px) {
+  footer .container .contnet .about-me .box:first-child p {
+    margin-left: 30px;
+  }
+}
+footer .container .contnet .about-me .box:last-child i {
+  font-size: 45px;
+  color: #575757;
+  margin-left: 5px;
+  cursor: url(../Imgs/up-sign.png), auto;
+  transition: 0.3s linear;
+  -webkit-transition: 0.3s linear;
+  -moz-transition: 0.3s linear;
+  -ms-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+}
+@media (max-width: 767px) {
+  footer .container .contnet .about-me .box:last-child i {
+    margin-left: 30px;
+  }
+}
+footer .container .contnet .about-me .box:last-child i:hover {
+  color: #3498db;
+}/*# sourceMappingURL=style.css.map */
