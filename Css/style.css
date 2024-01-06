@@ -300,14 +300,18 @@ footer .container .contnet .about-me .box:first-child h3 {
   color: #3498db;
   margin: 0;
 }
-footer .container .contnet .about-me .box:first-child p {
+footer .container .contnet .about-me .box:first-child p,
+footer .container .contnet .about-me .box:first-child a {
+  color: #f05a88;
+  text-transform: uppercase;
   max-width: 250px;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1.7;
 }
 @media (max-width: 767px) {
-  footer .container .contnet .about-me .box:first-child p {
+  footer .container .contnet .about-me .box:first-child p,
+  footer .container .contnet .about-me .box:first-child a {
     margin-left: 30px;
   }
 }

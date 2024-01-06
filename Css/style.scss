@@ -269,10 +269,13 @@ footer {
             color: $background;
             margin: 0;
           }
-          p {
+          p,
+          a {
+            color: #f05a88;
+            text-transform: uppercase;
             max-width: 250px;
             font-size: 18px;
-            font-weight: 500;
+            font-weight: 600;
             line-height: 1.7;
             @media (max-width: 767px) {
               margin-left: 30px;
