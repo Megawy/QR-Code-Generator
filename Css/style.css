@@ -8,10 +8,37 @@
   background: #3498db;
 }
 
+.root {
+  position: relative;
+}
+
+.discord {
+  position: relative;
+}
+.discord iframe {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 800px;
+}
+@media (max-width: 1199px) {
+  .discord iframe {
+    width: 280px;
+    height: 600px;
+  }
+}
+@media (max-width: 991px) {
+  .discord iframe {
+    width: 250px;
+    height: 300px;
+  }
+}
+
 .main {
   display: flex;
   padding: 0 10px;
-  min-height: 70vh;
+  min-height: 100vh;
   align-items: center;
   background: #3498db;
   justify-content: center;
@@ -134,6 +161,44 @@
   .main .container .content .qr-code img {
     width: 160px;
   }
+}
+.main .container .content .button {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.main .container .content .button .box button {
+  display: block;
+  align-items: center;
+  width: 300px;
+  height: 70px;
+  color: #3498db;
+  cursor: url(../Imgs/up-sign.png), auto;
+  margin-top: 50px;
+  font-size: 22px;
+  font-weight: 600;
+  background: #fff;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  outline: none;
+  border: 2px solid #fff;
+}
+.main .container .content .button .box button:hover {
+  color: #575757;
+  background-color: #3498db;
+}
+.main .container .content .share-buttons {
+  margin-top: 50px;
+}
+.main .container .content .share-buttons a {
+  cursor: url(../Imgs/up-sign.png), auto;
+  margin-right: 10px;
+  font-size: 30px;
+  color: #fff;
 }
 
 footer {

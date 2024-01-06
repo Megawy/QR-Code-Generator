@@ -9,11 +9,16 @@
     <link rel="stylesheet" href="Css/normalize.css">
     <link rel="stylesheet" href="Css/Global Rules.css">
     <link rel="stylesheet" href="Css/style.css">
-    <link rel="shortcut icon" href="Imgs/" type="image/x-icon">
+    <link rel="shortcut icon" href="Imgs/icon.png" type="image/x-icon">
 </head>
 
 <body>
     <div class="root">
+        <div class="discord">
+            <iframe src="https://discord.com/widget?id=1000366347248742401&theme=dark" width="350" height="500"
+                allowtransparency="true" frameborder="0"
+                sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+        </div>
         <div class="main">
             <div class="container">
                 <div class="content">
@@ -26,11 +31,32 @@
                         <button>Generate QR Code</button>
                     </div>
                     <div class="qr-code">
-                        <img src="" alt="qr-code">
+                        <img id="canvas" src="" alt="qr-code">
+                    </div>
+                    <div class="button">
+                        <div class="box">
+                            <button id="canvasDownload">Download QR CODE</button>
+                        </div>
+                        <!-- <div class="share-buttons">
+
+                            facebook
+                            <a class="facebook" target="blank"><i class="fab fa-facebook"></i></a>
+
+                            twitter
+                            <a class="twitter" target="blank"><i class="fab fa-twitter"></i></a>
+
+                            whatsapp
+                            <a class="whatsapp" target="blank"><i class="fab fa-whatsapp"></i></a>
+
+                            telegram
+                            <a class="telegram" target="blank"><i class="fab fa-telegram"></i></a>
+
+                        </div> -->
                     </div>
                 </div>
             </div>
         </div>
+
         <footer>
             <div class="container">
                 <div class="contnet">
@@ -71,7 +97,10 @@
             </div>
         </footer>
     </div>
-    <script src="JS/Main.js"></script>
+    <script src="JS/QR Generating.js"></script>
+    <script src="JS/FileSaver.js"></script>
+    <script src="JS/Download jpg.js"></script>
+    <script src="JS/share-buttons.js"></script>
 </body>
 
 </html>

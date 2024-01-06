@@ -7,10 +7,31 @@ $color-2: #575757;
   color: $color-1;
   background: $background;
 }
+.root {
+  position: relative;
+}
+.discord {
+  position: relative;
+  iframe {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 800px;
+    @media (max-width: 1199px) {
+      width: 280px;
+      height: 600px;
+    }
+    @media (max-width: 991px) {
+      width: 250px;
+      height: 300px;
+    }
+  }
+}
 .main {
   display: flex;
   padding: 0 10px;
-  min-height: 70vh;
+  min-height: 100vh;
   align-items: center;
   background: $background;
   justify-content: center;
@@ -118,6 +139,46 @@ $color-2: #575757;
           @media (max-width: 430px) {
             width: 160px;
           }
+        }
+      }
+      .button {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        .box {
+          button {
+            display: block;
+            align-items: center;
+            width: 300px;
+            height: 70px;
+            color: $background;
+            cursor: url(../Imgs/up-sign.png), auto;
+            margin-top: 50px;
+            font-size: 22px;
+            font-weight: 600;
+            background: $color-1;
+            border-radius: 20px;
+            -webkit-border-radius: 20px;
+            -moz-border-radius: 20px;
+            -ms-border-radius: 20px;
+            -o-border-radius: 20px;
+            outline: none;
+            border: 2px solid $color-1;
+            &:hover {
+              color: $color-2;
+              background-color: $background;
+            }
+          }
+        }
+      }
+      .share-buttons {
+        margin-top: 50px;
+        a {
+          cursor: url(../Imgs/up-sign.png), auto;
+          margin-right: 10px;
+          font-size: 30px;
+          color: $color-1;
         }
       }
     }
