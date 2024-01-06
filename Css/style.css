@@ -12,33 +12,10 @@
   position: relative;
 }
 
-.discord {
-  position: relative;
-}
-.discord iframe {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 300px;
-  height: 800px;
-}
-@media (max-width: 1199px) {
-  .discord iframe {
-    width: 280px;
-    height: 600px;
-  }
-}
-@media (max-width: 991px) {
-  .discord iframe {
-    width: 250px;
-    height: 300px;
-  }
-}
-
 .main {
   display: flex;
   padding: 0 10px;
-  min-height: 100vh;
+  min-height: 130vh;
   align-items: center;
   background: #3498db;
   justify-content: center;
@@ -68,9 +45,11 @@
 .main .container {
   display: flex;
   align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .main .container .content {
+  margin-top: 50px;
   cursor: url(../Imgs/cursor3.png), auto;
   height: 265px;
   max-width: 410px;
@@ -199,6 +178,29 @@
   margin-right: 10px;
   font-size: 30px;
   color: #fff;
+}
+.main .container .discord {
+  margin-top: 150px;
+  margin-bottom: 20px;
+}
+@media (max-width: 991px) {
+  .main .container .discord {
+    margin-top: 120px;
+  }
+}
+.main .container .discord iframe {
+  width: 700px;
+}
+@media (max-width: 991px) {
+  .main .container .discord iframe {
+    width: 600px;
+    height: 350px;
+  }
+}
+@media (max-width: 767px) {
+  .main .container .discord iframe {
+    width: 300px;
+  }
 }
 
 footer {

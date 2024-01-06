@@ -10,28 +10,11 @@ $color-2: #575757;
 .root {
   position: relative;
 }
-.discord {
-  position: relative;
-  iframe {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 300px;
-    height: 800px;
-    @media (max-width: 1199px) {
-      width: 280px;
-      height: 600px;
-    }
-    @media (max-width: 991px) {
-      width: 250px;
-      height: 300px;
-    }
-  }
-}
+
 .main {
   display: flex;
   padding: 0 10px;
-  min-height: 100vh;
+  min-height: 130vh;
   align-items: center;
   background: $background;
   justify-content: center;
@@ -58,8 +41,10 @@ $color-2: #575757;
   .container {
     display: flex;
     align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
     .content {
+      margin-top: 50px;
       cursor: url(../Imgs/cursor3.png), auto;
       height: 265px;
       max-width: 410px;
@@ -179,6 +164,23 @@ $color-2: #575757;
           margin-right: 10px;
           font-size: 30px;
           color: $color-1;
+        }
+      }
+    }
+    .discord {
+      margin-top: 150px;
+      margin-bottom: 20px;
+      @media (max-width: 991px) {
+        margin-top: 120px;
+      }
+      iframe {
+        width: 700px;
+        @media (max-width: 991px) {
+          width: 600px;
+          height: 350px;
+        }
+        @media (max-width: 767px) {
+          width: 300px;
         }
       }
     }
